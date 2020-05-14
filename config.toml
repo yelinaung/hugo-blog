@@ -1,0 +1,4 @@
+baseURL = "http://blog.yelinaung.com/"
+languageCode = "en-us"
+title = "Random stuff"
+theme = "hugo-ink"

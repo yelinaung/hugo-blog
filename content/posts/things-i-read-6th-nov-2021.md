@@ -19,8 +19,8 @@ Things that I stumbled on a rainy day.
 I have heard/seen it but not in detail until now.
 Saw someone posted about it [on HN](https://news.ycombinator.com/item?id=29078919) and makes me curious.
 
-I also found post about [Trie written in Python](https://albertauyeung.github.io/2020/06/15/python-trie.html/) by Googling.
-I like the clear explaination with diagrams and put [the code on github](https://github.com/yelinaung/dsa/blob/master/trie.py).
+I also found a post about [Trie written in Python](https://albertauyeung.github.io/2020/06/15/python-trie.html/) by Googling.
+I like the clear explanation with diagrams and put [the code on github](https://github.com/yelinaung/dsa/blob/master/trie.py).
 
 ### Some takeaways
 
@@ -48,5 +48,5 @@ There are two main processes
     - The leader waits until a majority of them have written the entry.
     - Then the leader commits the state and confirms that to the followers.
 
-There are a lot of more details than this so probably will go back to the link above from time to time.
+There are a lot more details than this so probably will go back to the link above from time to time.
 And maybe I will have to try implementing it.

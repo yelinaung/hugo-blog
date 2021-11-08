@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Random stuff</title>
+    <link>https://blog.yelinaung.com/posts/</link>
+    <description>Recent content in Posts on Random stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Nov 2021 16:39:38 +0800</lastBuildDate><atom:link href="https://blog.yelinaung.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Things I Read 7th Nov 2021</title>
+      <link>https://blog.yelinaung.com/posts/things-i-read-7th-nov-2021/</link>
+      <pubDate>Sun, 07 Nov 2021 16:39:38 +0800</pubDate>
+      
+      <guid>https://blog.yelinaung.com/posts/things-i-read-7th-nov-2021/</guid>
+      <description>Another raining day.
+SIM Cards!!
+Another day, another intersting HN post. I saw this post What is AT&amp;amp;T doing at 1111340002?.
+And the top was very intersting to me.
+ Even in relatively technical circles, like HN, many people are not aware of this and I use every opportunity I have to reiterate:
+  A SIM card is a full blown computer with its own CPU and memory.
+  Your carrier can upload and run arbitrary code without your consent or knowledge.</description>
+    </item>
+    
+    <item>
+      <title>Things I Read - 6th Nov 2021</title>
+      <link>https://blog.yelinaung.com/posts/things-i-read-6th-nov-2021/</link>
+      <pubDate>Sat, 06 Nov 2021 16:10:41 +0800</pubDate>
+      
+      <guid>https://blog.yelinaung.com/posts/things-i-read-6th-nov-2021/</guid>
+      <description>Things that I stumbled on a rainy day.
+ Understanding how Trie (Data Structure) works Understanding how Raft (Distributed Consensus algorithm) works  Trie I have heard/seen it but not in detail until now. Saw someone posted about it on HN and makes me curious.
+I also found post about Trie written in Python by Googling. I like the clear explaination with diagrams and put the code on github.
+Some takeaways  Cool data structure to build autocomplete / prefix tree.</description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>https://blog.yelinaung.com/posts/my-first-post/</link>
+      <pubDate>Thu, 14 May 2020 20:47:43 +0800</pubDate>
+      
+      <guid>https://blog.yelinaung.com/posts/my-first-post/</guid>
+      <description>This is some static page where you can write about yourself.</description>
+    </item>
+    
+  </channel>
+</rss>

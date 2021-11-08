@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Random stuff</title>
+    <link>https://blog.yelinaung.com/tags/</link>
+    <description>Recent content in Tags on Random stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Nov 2021 16:10:41 +0800</lastBuildDate><atom:link href="https://blog.yelinaung.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>algorithm</title>
+      <link>https://blog.yelinaung.com/tags/algorithm/</link>
+      <pubDate>Sat, 06 Nov 2021 16:10:41 +0800</pubDate>
+      
+      <guid>https://blog.yelinaung.com/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data structure</title>
+      <link>https://blog.yelinaung.com/tags/data-structure/</link>
+      <pubDate>Sat, 06 Nov 2021 16:10:41 +0800</pubDate>
+      
+      <guid>https://blog.yelinaung.com/tags/data-structure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raft</title>
+      <link>https://blog.yelinaung.com/tags/raft/</link>
+      <pubDate>Sat, 06 Nov 2021 16:10:41 +0800</pubDate>
+      
+      <guid>https://blog.yelinaung.com/tags/raft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>trie</title>
+      <link>https://blog.yelinaung.com/tags/trie/</link>
+      <pubDate>Sat, 06 Nov 2021 16:10:41 +0800</pubDate>
+      
+      <guid>https://blog.yelinaung.com/tags/trie/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

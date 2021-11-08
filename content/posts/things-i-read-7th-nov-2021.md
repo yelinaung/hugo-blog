@@ -1,5 +1,5 @@
 ---
-title: "Things I Read 7th Nov 2021"
+title: "Things I Read - SIM Cards!"
 date: 2021-11-07T16:39:38+08:00
 draft: false
 ---

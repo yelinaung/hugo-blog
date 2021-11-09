@@ -2,6 +2,12 @@
 title: "Things I Read : CPython Performance"
 date: 2021-11-09T00:25:02+08:00
 draft: false
+tags:
+- python
+- cpython
+- performance
+- compiler
+- optimizations
 ---
 
 I've been looking at how I can improve the performance of some service written in Python.

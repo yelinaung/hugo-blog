@@ -10,11 +10,14 @@ tags:
 - optimizations
 ---
 
-I've been looking at how I can improve the performance of some service written in Python.
-I found [Pyston](https://github.com/pyston/pyston): A faster and highly-compatible with Cpython from Dropbox.
-I've integrated into a service and hopefully I will have something to share another time!
+I've been looking at how I can improve the performance of an internal service written in Python.
+I found [Pyston](https://github.com/pyston/pyston): a faster and highly-compatible with Cpython from Dropbox.
+I've integrated into the service and hopefully I will have something to share another time!
 
-The interesting post I read was [Python performance: it's not just the interpreter](https://blog.kevmod.com/2020/05/python-performance-its-not-just-the-interpreter/) (from one of the Pyston's author). It's great! I didn't understand that much of the "C" optimizations because my lack of knowledge with the langauge and the CPython internals.
+For today issue of what I leared was [Python performance: it's not just the interpreter](https://blog.kevmod.com/2020/05/python-performance-its-not-just-the-interpreter/).
+This is from one of the Pyston's authors.
+I didn't understand that much of the "C" optimizations because my lack of knowledge with the langauge and the CPython internals.
+Still, I find it great because I learned a thing or two from the post.
 
 I also tried running the Python examples on my laptop. See the [github repo](https://github.com/kmod/python_perf/tree/master/str_bench) for the code content.
 

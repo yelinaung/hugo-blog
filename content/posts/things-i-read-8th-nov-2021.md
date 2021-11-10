@@ -11,8 +11,8 @@ tags:
 ---
 
 I've been looking at how I can improve the performance of an internal service written in Python.
-I found [Pyston](https://github.com/pyston/pyston): a faster and highly-compatible with Cpython from Dropbox.
-I've integrated into the service and hopefully I will have something to share another time!
+I remember I read about [Pyston](https://github.com/pyston/pyston) (a faster and highly-compatible with Cpython from Dropbox) on [HackerNews](https://news.ycombinator.com/item?id=27059119) before and this seems like an opportunity to try it out.
+I've integrated into the service, planning to run some benchmarks and hopefully I will have something to share another time!
 
 For today issue of what I leared was [Python performance: it's not just the interpreter](https://blog.kevmod.com/2020/05/python-performance-its-not-just-the-interpreter/).
 This is from one of the Pyston's authors.

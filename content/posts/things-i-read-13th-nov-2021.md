@@ -2,6 +2,11 @@
 title: "for vs list comprehension"
 date: 2021-11-13T12:07:13+08:00
 draft: false
+tags:
+- python
+- cpython
+- performance
+- optimizations
 ---
 
 This is me writing down my discussion with someone from work regarding `for` loop vs list comprehension in Python.

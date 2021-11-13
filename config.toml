@@ -4,6 +4,8 @@ title = "Random stuff"
 theme = "hugo-ink"
 pygmentsCodeFences = true
 pygmentsStyle = "xcode"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
 # Nav.
 [[menu.main]]
@@ -31,16 +33,10 @@ name = "Github"
 icon = "github"
 url = "https://github.com/yelinaung"
 
-[markup]
-  [markup.highlight]
-    anchorLineNos = false
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ''
-    lineAnchors = ''
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = 'monokai'
-    tabWidth = 4
+[[params.social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"
+
+[taxonomies]
+   tag = "tags"

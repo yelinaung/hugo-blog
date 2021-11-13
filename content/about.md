@@ -6,7 +6,7 @@ draft: false
 
 Hi! My name is [yelinaung](https://www.yelinaung.com/)
 
-I want to write down 
+I am writing down
 - what I've learned recently
 - learning progress
 - interesting topics

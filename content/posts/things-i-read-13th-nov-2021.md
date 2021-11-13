@@ -11,11 +11,11 @@ tags:
 
 This is me writing down my discussion with someone from work regarding `for` loop vs list comprehension in Python.
 
-During a code review, I was commeting on a chunk of code to change from `for` loop to a list comprehension.
-We continue to talk about _why_ I wanted it that way.
+During a code review, I was commenting on a chunk of code to change from `for` loop to a list comprehension.
+We also talked about _why_ I wanted it that way.
 One reason is list comprehension could be (arguably) more readable than a `for` loop. For a simple loop, that might be the case.
 Another reason is list comprehension is _faster_ than the for loop. How fast? I have never tried comparing them before.
-So I made a few examples to show case that.
+So I made a few examples to showcase that.
 
 This is running on CPython 3.9.5
 
@@ -59,10 +59,10 @@ $ python -m timeit 'from list_comprehension_append_list import list_comprehensio
 ```
 
 The numbers don't lie.
-Of course this is a very simplified example with large number of items. 
+Of course, this is a very simplified example with a large number of items. 
 It might not matter much when we are going through small numbers of `n`.
 
-Me and my friend contine to talk about why he prefers the `for` loop especially when the line is really long with `if` condition or when there are two list comprehensions.
+Me and my friend continue on about why he prefers the `for` loop especially when the line is really long with `if` condition or when there are two list comprehensions.
 I agree with that. I would prefer (from the readability standpoint) 
 ```python
 list_of_words = []
@@ -78,7 +78,7 @@ over
 ```
 With enough practice and usage, I think we can get used to the double list comprehension though so let's see.
 
-The same goes for the comprehension with long line with `if` and `else` ). Maybe [black](https://black.readthedocs.io/en/stable/) will help if it's really long.
+The same goes for the comprehension with a long line with `if` and `else` ). Maybe [black](https://black.readthedocs.io/en/stable/) will help if it's really long.
 
 
 ### Why is the list comprehension faster actually?

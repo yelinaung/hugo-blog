@@ -15,7 +15,7 @@ During a code review, I was commenting on a chunk of code to change from `for` l
 We also talked about _why_ I wanted it that way.
 One reason is list comprehension could be (arguably) more readable than a `for` loop. For a simple loop, that might be the case.
 Another reason is list comprehension is _faster_ than the for loop. How fast? I have never tried comparing them before.
-So I made a few examples to showcase that.
+So I made a few examples to showcase that. These are from the excellent [For Loop vs List Comprehension article](https://switowski.com/blog/for-loop-vs-list-comprehension).
 
 This is running on CPython 3.9.5
 
@@ -83,9 +83,7 @@ The same goes for the comprehension with a long line with `if` and `else` ). May
 
 ### Why is the list comprehension faster actually?
 
-Copying from the good ol' StackOverflow
-
-https://stackoverflow.com/questions/30245397/why-is-a-list-comprehension-so-much-faster-than-appending-to-a-list/30245465#30245465
+Copying from the good ol' [StackOverflow question/answer](https://stackoverflow.com/questions/30245397/why-is-a-list-comprehension-so-much-faster-than-appending-to-a-list/30245465#30245465)
 
 - List comprehension is basically just a "syntactic sugar" for the regular for loop. 
 - In this case the reason that it performs better is because it doesn't need to load the append attribute of the list and call it as a function at each iteration. 

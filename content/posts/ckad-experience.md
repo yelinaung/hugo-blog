@@ -55,5 +55,18 @@ You can search through Official docs to reference throughout the exam. This is o
 - You also get two exam simulators from [killer.sh](https://killer.sh/) as part the exam bundle.
     - I did't go through them but would recommend to go through if you have time. Learn more about them in [their FAQ](https://killer.sh/faq).
 
+#### Things that I struggled with/Things that I learned
+
+Although I have been using Kube for quite some time, I was not familiar with certain topics such as
+- [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+- [Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
+- [Volumes](https://kubernetes.io/docs/concepts/storage/volumes/). I am somewhat familiar with PV and PVC but still learned a thing or two about them like [emptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir)
+- `kubectl explain pods --recursive | less` is neat
+- [Docker capabilities](https://dockerlabs.collabnix.com/advanced/security/capabilities/)
+
+#### Other Useful resources
+
+- https://github.com/twajr/ckad-prep-notes
+- https://reviewnprep.com/blog/pass-ckad-exam-in-33-days/
 
 Well, that's all folks.

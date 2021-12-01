@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>trie on Random stuff</title>
+    <link>https://blog.yelinaung.com/tags/trie/</link>
+    <description>Recent content in trie on Random stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Nov 2021 16:10:41 +0800</lastBuildDate><atom:link href="https://blog.yelinaung.com/tags/trie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Things I Read - Trie, Raft</title>
+      <link>https://blog.yelinaung.com/posts/things-i-read-6th-nov-2021/</link>
+      <pubDate>Sat, 06 Nov 2021 16:10:41 +0800</pubDate>
+      
+      <guid>https://blog.yelinaung.com/posts/things-i-read-6th-nov-2021/</guid>
+      <description>Things that I stumbled on a rainy day.
+ Understanding how Trie (Data Structure) works Understanding how Raft (Distributed Consensus algorithm) works  Trie I have heard/seen it but not in detail until now. Saw someone posted about it on HN and makes me curious.
+I also found a post about Trie written in Python by Googling. I like the clear explanation with diagrams and put the code on github.</description>
+    </item>
+    
+  </channel>
+</rss>

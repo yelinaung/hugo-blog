@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>compiler on Random stuff</title>
+    <link>https://blog.yelinaung.com/tags/compiler/</link>
+    <description>Recent content in compiler on Random stuff</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Nov 2021 00:25:02 +0800</lastBuildDate><atom:link href="https://blog.yelinaung.com/tags/compiler/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Things I Read : CPython Performance</title>
+      <link>https://blog.yelinaung.com/posts/things-i-read-8th-nov-2021/</link>
+      <pubDate>Tue, 09 Nov 2021 00:25:02 +0800</pubDate>
+      
+      <guid>https://blog.yelinaung.com/posts/things-i-read-8th-nov-2021/</guid>
+      <description>I&amp;rsquo;ve been looking at how I can improve the performance of an internal service written in Python. I was wondering if there is a way to speed things up without rewriting large part of the code or using another programming language to rewrite part of the code. Then I remember reading about Pyston (a faster and highly-compatible with Cpython from Dropbox) on HackerNews and this seems like an opportunity to try it out.</description>
+    </item>
+    
+  </channel>
+</rss>

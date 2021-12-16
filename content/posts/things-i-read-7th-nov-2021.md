@@ -2,6 +2,7 @@
 title: "Things I Read - SIM Cards!"
 date: 2021-11-07T16:39:38+08:00
 draft: false
+description: Another rainy day, another interesting post. This time, it is the SIM cards.
 tags:
 - sim cards
 ---

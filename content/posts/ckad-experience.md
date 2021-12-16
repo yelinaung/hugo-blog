@@ -2,6 +2,7 @@
 title: "CKAD Experience"
 date: 2021-12-01T12:08:12+08:00
 draft: false
+description: My Experience taking Linux Foundation CKAD exam
 ---
 
 I recently took the [Certified Kubernetes Application Developer (CKAD)](https://www.cncf.io/certification/ckad/) exam and [passed](https://www.credly.com/badges/e3cf473d-e91a-4f8d-a732-59261dbdefe9/public_url) with 97 out of 100.

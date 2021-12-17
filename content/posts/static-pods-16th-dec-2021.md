@@ -1,5 +1,5 @@
 ---
-title: "Static Pods"
+title: "Static Pods in Kubernetes"
 date: 2021-12-16T12:23:13+08:00
 draft: false
 description: What are even "Statics" Pods in Kubernetes ?
@@ -39,3 +39,5 @@ Yet, once the `api-server` is reachable, kubelet will notify a record on the `ap
 Most of the time, we won't have to create one like this.
 Static pods are usually used by software bootstrapping Kubernetes itself. 
 One use is [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm/). During the setup, kubeadm uses static pods to bring up Kubernetes control plane components like api-server, controller-manager.
+
+This only works for the Pods and not for `ReplicaSet` or `Deployment`.

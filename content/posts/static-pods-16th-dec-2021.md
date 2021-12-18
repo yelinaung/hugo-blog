@@ -9,7 +9,8 @@ tags:
 ---
 
 After taking the [CKAD](/posts/ckad-experience/) exam, I am planning to take the (harder) [CKA](https://www.cncf.io/certification/cka/) exam.
-Today, I stumbled upon [Static Pods](https://kubernetes.io/docs/concepts/workloads/pods/#static-pods) in Kubernetes.
+As I was studying for it, I stumbled upon [Static Pods](https://kubernetes.io/docs/concepts/workloads/pods/#static-pods) in Kubernetes.
+It is slightly different from the regular Pods.
 
 Imagine there is a Kubernetes cluster with no Schedular or Controller or even no Master Node.
 There are worker nodes. On each worker node, there is [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) running.

@@ -90,3 +90,25 @@ https://stackoverflow.com/questions/30245397/why-is-a-list-comprehension-so-much
 - In other words and in general, list comprehensions perform faster because suspending and resuming a function's frame, or multiple functions in other cases, is slower than creating a list on demand.
 
 Adding "learn more about python bytecodes" and dive deep into the (in)famous [ceval](https://github.com/python/cpython/blob/main/Python/ceval.c) code to my endless list of things to read! 
+
+### One more thing...
+
+Aside from all the things I wrote above, the excellent Mr [@reuvenmlerner](https://twitter.com/reuvenmlerner) pointed out why use a list comprehension, when a "for" loop is just as good.
+
+The basic idea is that 
+- We use `for` loop when we want to **perform an action** and don't care much about the return value from the action.
+
+```python
+for person in people:
+    send_email(person)
+```
+
+- On the other hand, we use list comprehension when we want getting a list back, either for use directly as a list or as input to create a different data structure.
+```python
+# Get usernames from Unix's /etc/passwd
+[
+    line.split(':')[0] for line in open('/etc/passwd') 
+        if line.strip() and not line.startswith('#')
+]
+```
+If you liked this, consider subscribing to his Newsletter [here](https://lerner.co.il/newsletter/?utm_source=sparkloop&utm_campaign=referral-hub)!

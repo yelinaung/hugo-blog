@@ -6,6 +6,7 @@ description: What are even "Statics" Pods in Kubernetes ?
 tags:
 - kubernetes
 - k8s
+- ckad prep
 ---
 
 After taking the [CKAD](/posts/ckad-experience/) exam, I am planning to take the (harder) [CKA](https://www.cncf.io/certification/cka/) exam.

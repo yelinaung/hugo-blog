@@ -13,7 +13,14 @@ After taking the [CKAD](/posts/ckad-experience/) exam, I am planning to take the
 As I was studying for it, I stumbled upon [Static Pods](https://kubernetes.io/docs/concepts/workloads/pods/#static-pods) in Kubernetes.
 It is slightly different from the regular Pods.
 
-Imagine there is a Kubernetes cluster with no Schedular or Controller or even no Master Node.
+This is the normal Kubernetes cluster components
+
+![Kubernetes Constructs Concepts and Architecture](https://platform9.com/wp-content/uploads/2019/05/kubernetes-constructs-concepts-architecture.jpg)
+From [Cloud9 Kubernetes Concepts and Architecture](https://platform9.com/blog/kubernetes-enterprise-chapter-2-kubernetes-architecture-concepts/)
+
+Learn more about the Control plane components [here](https://kubernetes.io/docs/concepts/overview/components/#control-plane-components).
+
+Now, let's imagine there is a Kubernetes cluster with no Schedular or Controller or even no Master Node.
 There are worker nodes. On each worker node, there is [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) running.
 Now, how can we tell `kubelet` to run a Pod itself?
 

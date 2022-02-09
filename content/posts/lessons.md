@@ -13,6 +13,6 @@ I also thought I would also post it here for anyone.
 
 Disclaimer : This is just my thoughts and do not represent the views of my employer. :-)
 
-{{< embed-pdf url="./lessons.pdf" >}}
+If you wanna see the slide comments and bigger view, go to this [link](https://bit.ly/336PvWa).
 
-If you wanna see the slide comments, go to this [link](https://bit.ly/336PvWa).
+{{< embed-pdf url="./lessons.pdf" >}}

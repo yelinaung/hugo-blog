@@ -7,6 +7,11 @@ pygmentsStyle = "xcode"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
+[sitemap]
+  changefreq = 'monthly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
 # Nav.
 [[menu.main]]
 name = "Home"
@@ -40,4 +45,5 @@ url = "/index.xml"
 
 [taxonomies]
 tag = "tags"
+
 

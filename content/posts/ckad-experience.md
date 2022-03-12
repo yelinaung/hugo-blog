@@ -16,6 +16,8 @@ The primary motivations for me were
 There are other advantages like opening up to more opportunities and adding credibility. They are secondary to me.
 I also don't think certifications are not _necessary_ in our industry and I see them as _nice to have_.
 
+### A few tips
+
 Having said all that, the exam experience was fun. A few tips below could help whoever wants to take are
 
 #### Go through the important links
@@ -24,7 +26,7 @@ Having said all that, the exam experience was fun. A few tips below could help w
 - Tips - https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad
 
 #### Setup
-During the exam, you will get a Linux VM. I recommend you to get familiarized with command line, vim, tmux. 
+During the exam, you will get a Linux VM. I recommend you to get familiarized with command line, vim, tmux.
 So that you can be fast to solve the given tasks. There are plenty of tutorials out there to getting started with vim and tmux.
 - Vim settings for `.vimrc`. I memorized these commands as `s e t`
 ```

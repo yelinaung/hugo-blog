@@ -174,7 +174,7 @@ ul.flat {
 ul.flat li {
     display: block;
     list-style: none;
-    margin-left: 0;
+    margin-left: 10px;
 }
 
 .prevent-collapse {
@@ -189,8 +189,13 @@ ul {
     list-style: disc inside;
 }
 
+.post ul {
+    list-style-type: "*";
+}
+
 .post ul li {
     margin-bottom: 10px;
+    padding: 3px 0 2px 25px;
 }
 
 .post ul li p {

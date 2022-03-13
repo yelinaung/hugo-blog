@@ -30,6 +30,12 @@ You will have a couple of clusters and their contexts. Always check under which 
 
 During the exam, don’t spend so much time getting stuck at a problem. Move on to the next one and come back to resolve it later. Otherwise, you might get panicked and won’t be able to finish all the questions given the divide time. Speed is key.
 
+#### Some other tips from /r/Kubernetes
+
+These suggestions were useful to me
+- [Cleared my CKA exam with a score of 92%. Here are a few tips](https://www.reddit.com/r/kubernetes/comments/ssxhsd/cleared_my_cka_exam_with_a_score_of_92_here_are_a/)
+- [Just passed the CKA! Here are some tips and tricks to pass (2022)](https://www.reddit.com/r/kubernetes/comments/s6l7xs/just_passed_the_cka_here_are_some_tips_and_tricks/)
+
 ### Some of my struggles
 
 Despite passing the exams, I am still not satisfied with some areas. So I plan to go back and study those again. Some of the topics are

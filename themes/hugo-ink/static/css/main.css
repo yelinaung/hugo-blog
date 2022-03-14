@@ -190,7 +190,7 @@ ul {
 }
 
 .post ul {
-    list-style-type: "*";
+    list-style-type: square;
 }
 
 .post ul li {

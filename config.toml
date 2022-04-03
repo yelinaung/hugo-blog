@@ -33,6 +33,11 @@ name = "Tags"
 url = "/tags"
 weight = 4
 
+[params]
+subtitle = "My random notes"
+featherIconsCDN = true
+mode = "auto" # "dark" or "auto"
+
 [[params.social]]
 name = "Github"
 icon = "github"

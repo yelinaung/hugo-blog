@@ -121,10 +121,11 @@ What is your question given the above context?
 - Ask questions in public channels. Don't be afraid to look stupid as long as you have tried to provide enough info/context for your question.
 - Asking in a public channel means that more people can jump in and help you.
 - Other people may have the same questions as well, so sharing in a public channel reduces the need to communicate twice.
-- In the heat of the moment, it is possible that the emotions get the best out of us.
+- In the heat of the moment, we might be reacting without thinking.
     - Pause for a moment and try to assume good intentions as your initial thought.
-    - Do not be afraid to challenge/clarify the status quo.
+    - On the other hand, do not be afraid to challenge/clarify the status quo in a constructive way.
     - Do not blame/throw shade at each other. Blame does not work and does not lead to a resolution.
+    - "We judge ourselves by our intentions and others by their behavior." Stephen Covey
 
 ## Dealing with different time zones
 - Keep in mind the timezones

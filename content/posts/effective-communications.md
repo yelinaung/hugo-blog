@@ -40,8 +40,8 @@ Working remotely means that spontaneous and informal check-ins are not possible;
     - E.g I need to release this feature X in 2 days and would love your review.
 - **Set an agenda or a thread.** Before every meeting, share all the relevant information and list down key issues. So that everyone can come up with a full understanding of the topic at hand.
 - **Document the decisions** from the meeting by either starting or continuing in a Slack thread or in a document. So that people who weren't there can find that information.
-- We also understand that people need a “maker schedule” so **set a block of time** every day and focus.
-    - Allocate at least 4 hours of uninterrupted maker time once you decide to make it your maker day
+- We also understand that people need a "maker schedule" so **set a block of time** every day and focus.
+    - Allocate at least 4 hours of uninterrupted maker time once you decide to make it your maker day. Respect other people maker's schedule as well.
 
 ## Prefer Asynchronous Communication
 Asynchronous communication is when you send a message without expecting an immediate response. Synchronous communication is when you send a message and the recipient processes the information and responds immediately. There are times and places for both types of communication.
@@ -121,6 +121,10 @@ What is your question given the above context?
 - Ask questions in public channels. Don't be afraid to look stupid as long as you have tried to provide enough info/context for your question.
 - Asking in a public channel means that more people can jump in and help you.
 - Other people may have the same questions as well, so sharing in a public channel reduces the need to communicate twice.
+- In the heat of the moment, it is possible that the emotions get the best out of us.
+    - Pause for a moment and try to assume good intentions as your initial thought.
+    - Do not be afraid to challenge/clarify the status quo.
+    - Do not blame/throw shade at each other. Blame does not work and does not lead to a resolution.
 
 ## Dealing with different time zones
 - Keep in mind the timezones

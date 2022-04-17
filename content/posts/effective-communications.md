@@ -153,6 +153,7 @@ What is your question given the above context?
 - Be more empathetic – recognize emotions in others, and understand other people's perspectives on a situation.
 
 ## References
+- [Recurse Center's social rule about Feigning Surprise](https://www.recurse.com/social-rules#no-feigning-surprise)
 - [How to ask good questions](https://jvns.ca/blog/good-questions/)
 - [How to get useful answers to your questions](https://jvns.ca/blog/2021/10/21/how-to-get-useful-answers-to-your-questions/)
 - [Asking good questions is hard (but worth it)](https://jvns.ca/blog/2016/08/31/asking-questions/)

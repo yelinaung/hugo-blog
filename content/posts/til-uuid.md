@@ -7,7 +7,7 @@ description: I was reading up on how the Envoy proxy generates x-request-id and 
 
 I was reading up on how the [Envoy proxy generates](https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_conn_man/headers#config-http-conn-man-headers-x-request-id) `x-request-id` and learned that it uses UUID (Universally unique identifier).
 Well, this is not new.
-We want the requests to be unique regardless of the clients, and the servers. We use UUID everywhere these days. We use it for the database's primary keys. Most programming languages/web frameworks provide built-in modules/functions to generate these numbers.
+We want the requests to be unique regardless of the clients, and the servers so it makes sense. We also use UUID everywhere these days. The biggest example is the database records' primary key. Most programming languages/web frameworks provide built-in modules/functions to generate these numbers.
 
 But how do they work? What's happening underneath?
 It turns out there are **5 different versions** of UUID, starting from UUID1 .. UUID5.

@@ -1,5 +1,5 @@
 ---
-title: "Today I learn about UUID"
+title: "Today I learned about UUID"
 date: 2022-04-17T12:32:48+08:00
 draft: false
 description: I was reading up on how the Envoy proxy generates x-request-id and learned that it uses UUID (Universally unique identifier). Then I got curious about UUIDs.
@@ -110,3 +110,8 @@ Envoy uses the 13th digit (the UUID version identifier) to decide whether it sho
 If the digit is `4`, it is the default and no trace status for this request.
 
 I have a sample envoy config to test this at [request_id_generation.yaml](https://github.com/yelinaung/envoy-fundamentals-configs/blob/master/request_id_generation.yaml).
+
+#### References
+
+- [UUID - Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+- [UUID Decoder](https://www.uuidtools.com/decode)

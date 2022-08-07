@@ -2,7 +2,7 @@
 title: "Things I Read 07th Aug 2022"
 date: 2022-08-07T12:34:06+08:00
 draft: false
-description: Things I read: Fun with Finite Automata
+description: Things I read 7th Aug 2022
 ---
 
 #### Fun with Finite Automata

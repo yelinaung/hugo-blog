@@ -3,6 +3,9 @@ title: "Things I Read 07th Aug 2022"
 date: 2022-08-07T12:34:06+08:00
 draft: false
 description: Things I read 7th Aug 2022 - Finite Automata, Feeling of Fulfillment, Micromanagement hell
+- til
+- Engineering management
+- Computer Science
 ---
 
 #### Fun with Finite Automata

@@ -3,6 +3,10 @@ title: "Things I Read 19th Aug 2022"
 date: 2022-08-19T13:34:34+08:00
 draft: false
 description: Alacritty, Kitty, Infra Engineering interview with Shawn Wang / swyx
+tags:
+- til
+- terminal
+- infrastructure
 ---
 
 ### Alacritty Error on remote machine terminal

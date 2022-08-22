@@ -3,6 +3,10 @@ title: "Things I Read 10th Aug 2022"
 date: 2022-08-10T09:39:24+08:00
 draft: false
 description: Using topologySpreadConstraints for K8s Pods to spread the Pods evenly
+tags:
+- til
+- kubernetes
+- infrastructure
 ---
 
 #### [Kubernetes] Pod Topology Spread Constraints

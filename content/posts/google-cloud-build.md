@@ -19,3 +19,5 @@ We've been facing other issues such as
 - slow initial boot times (Travis uses GCP VMs to run the builds),
 - unable to provision bigger machines for faster builds,
 - bugs: some builds missing and randmonly failing builds, etc.
+
+So,

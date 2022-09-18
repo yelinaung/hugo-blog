@@ -22,19 +22,29 @@ The other issues we faced are
 So, I looked around at what would be the easiest for us to gradually migrate onto. After comparing a few CI solutions (GitHub Actions, Jenkins, Gitlab CI/CD, ArgoCD, etc), I've settled on [Google Cloud Build](https://cloud.google.com/build) due to ease of use, faster and we are already using GCP for our infrastructure. Hence, it seems like a good solution for us.
 I didn't go down the self-hosted solutions route mainly because of the initial setup and maintenance.
 
-My rationales for the Cloud Build were
+
+### The good parts
+
 - Good integration with GCP services
-    - Seamless integration with other GCP services such as Google Kubernetes Engine (GKE), Artifact Registry (private Docker/NPM registry), Secret Manager, etc
-    - Given that it's already in the (private) GCP network, pushing/pulling the Docker images will be faster.
+
+Seamless integration with other GCP services such as Google Kubernetes Engine (GKE), Artifact Registry (private Docker/NPM registry), Secret Manager, etc
+Given that it's already in the (private) GCP network, pushing/pulling the Docker images will be faster.
+
 - No concurrent build limits
-    - Cloud Build does not have limitations on the number of concurrent builds we can run. This will speed up the build + deployment process.
+
+Cloud Build does not have limitations on the number of concurrent builds we can run. This will speed up the build + deployment process.
+
 - "Serverless"
-    - All the builds happen with a series of containers running up and down. We don't have to wait for a VM to spin up (unlike Travis CI).
+All the builds happen with a series of containers running up and down. We don't have to wait for a VM to spin up (unlike Travis CI).
+
 - Ability to customize the builds
-    - It allows us to select [bigger worker pools](https://cloud.google.com/build/docs/private-pools/private-pool-config-file-schema#machinetype) (more CPU cores and/or more memory).
+
+It allows us to select [bigger worker pools](https://cloud.google.com/build/docs/private-pools/private-pool-config-file-schema#machinetype) (more CPU cores and/or more memory).
+
 - It's [relatively cheap](https://cloud.google.com/build/pricing).
-    - The pricing model is pay-as-you-use instead of a fixed price.
-    - They are currently running a promotion with the first 120 builds-minutes per day being free.
+
+The pricing model is pay-as-you-use instead of a fixed price.
+They are currently running a promotion with the first 120 builds-minutes per day being free.
 
 I've migrated a few repositories from Travis CI to Cloud Build as proof of concept.
 For the repositories that don't require any other depencencies (such as DB to run the integration tests), I've seen the build times goes down from ~4min on Travis CI to ~2min on Cloud Build!
@@ -42,11 +52,14 @@ Additionally, we are also able to run more than 5 builds at a time without havin
 The ability to choose bigger machines enabled us to speed up some repo build time by a lot as well.
 
 
-Now, the not-so-good parts of the Cloud Build ...
+### The not-so-good parts
+
+Now, let's talk about the other side...
 
 - The [build notification system](https://cloud.google.com/build/docs/configuring-notifications/notifiers) is cranky, compared to [Travis-CI](https://docs.travis-ci.com/user/notifications/).
 
 All I wanted was to see the build status posted on Slack but I had to set up Pub/Sub, Cloud Run, Secret Manager and Cloud Storage. This, to me, is unnecessarily complicated.
+I mean, look at this image!
 
 ![Clould Build Notifiers](https://cloud.google.com/build/images/cloud-build-notifiers.svg)
 
@@ -91,9 +104,15 @@ On a related on, the Cloud Build provides [some information](https://cloud.googl
 Because of the way the Cloud Build is designed to ensure reproducibility, each step is isolated from the other.
 [The recommended way](https://cloud.google.com/build/docs/configuring-builds/pass-data-between-steps) is to write the data to a file in the `/workplace` folder and read it back from the subsequent steps.
 
-Now, it might seem like there are more annoyances than the good parts but it's the opposite. Since decreasing the build time and waiting in the build queue time are our main goals, overall we are pretty happy with the Cloud Build. If you are in a similar boat like us, I hope this post was useful for you!
 
-I am also hoping to see more improvements from GCP regarding the cranky parts!
+### Conclustion
+
+Now, it might seem like there are more annoyances than the good parts but it's the opposite.
+Since decreasing the build time and reducing the build queue time are our main goals, overall we are pretty happy with the Cloud Build.
+If you are in a similar boat like us (fed up with Travis CI, existing infrastructure on GCP), you can consider the Cloud Build as one of the options.
+I hope this post was useful for you.
+
+PS. Dear GCP, please improvements from GCP regarding the cranky parts!
 
 ### Other Useful links
 

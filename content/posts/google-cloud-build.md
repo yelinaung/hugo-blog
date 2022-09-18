@@ -51,6 +51,8 @@ For the repositories that don't require any other depencencies (such as DB to ru
 Additionally, we are also able to run more than 5 builds at a time without having to wait.
 The ability to choose bigger machines enabled us to speed up some repo build time by a lot as well.
 
+Some of the gains are not just due to the build environment. Depends on the applications, I used a few tricks such as caching, parallizing the tests and the build steps, etc.
+I will write more about these in the future.
 
 ### The not-so-good parts
 

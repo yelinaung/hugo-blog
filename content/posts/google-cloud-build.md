@@ -64,7 +64,7 @@ We are now enjoying being able to run more than 5 builds at a time without havin
 The ability to choose bigger machines enabled us to speed up some repo build time by a lot as well.
 
 Please note that some of the gains are not just due to the build environment.
-Depends on the applications, I used a few tricks such as caching, parallizing the tests and the build steps, etc.
+Depends on the applications, I used a few tricks such as caching, parallelizing the tests and the build steps, etc.
 I will write more about these in the future.
 
 ### The not-so-good parts
@@ -122,7 +122,7 @@ Because of the way the Cloud Build is designed to ensure reproducibility, each s
 [The recommended way](https://cloud.google.com/build/docs/configuring-builds/pass-data-between-steps) is to write the data to a file in the `/workplace` folder and read it back from the subsequent steps.
 
 
-### Conclustion
+### Conclusion
 
 Now, it might seem like there are more annoyances than the good parts but it's the opposite.
 Since decreasing the build time and reducing the build queue time are our main goals, overall we are pretty happy with the Cloud Build.

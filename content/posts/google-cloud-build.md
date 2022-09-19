@@ -12,11 +12,12 @@ readingTime = true
 hideComments = false
 +++
 
-At work, we've been facing lots of issues with [Travis CI](https://www.travis-ci.com/).
-The biggest issue is the inability to run concurrent builds more than 5 builds at a time. If some of the builds take a longer time, the rest of the other builds have to queue and slow down our velocity to ship.
+At work, we've been facing lots of issues with [Travis CI](https://www.travis-ci.com).
+The biggest issue is we cannot run more than 5 builds at a time. If some of the builds take a longer time, the rest have to queue.
+It slows down our velocity to ship things quickly.
 The other issues we faced are
-- slow initial boot times (Travis uses GCP VMs to run the builds),
-- unable to provision bigger machines for faster builds,
+- slow initial boot times (Travis uses GCP VMs to run the builds)
+- unable to provision bigger machines for faster builds
 - bugs: some builds missing and randomly failing builds, etc.
 
 So, I looked around at what would be the easiest for us to gradually migrate onto. After comparing a few CI solutions (GitHub Actions, Jenkins, Gitlab CI/CD, ArgoCD, etc), I've settled on [Google Cloud Build](https://cloud.google.com/build) due to ease of use, faster and we are already using GCP for our infrastructure. Hence, it seems like a good solution for us.
@@ -25,14 +26,14 @@ I didn't go down the self-hosted solutions route mainly because of the initial s
 
 ### The good parts
 
+- No concurrent build limits
+
+Cloud Build does not have limitations on the number of concurrent builds we can run. This solves the biggest issue we faced as it speeds up the build + deployment process.
+
 - Good integration with GCP services
 
 Seamless integration with other GCP services such as Google Kubernetes Engine (GKE), Artifact Registry (private Docker/NPM registry), Secret Manager, etc
 Given that it's already in the (private) GCP network, pushing/pulling the Docker images will be faster.
-
-- No concurrent build limits
-
-Cloud Build does not have limitations on the number of concurrent builds we can run. This will speed up the build + deployment process.
 
 - "Serverless"
 All the builds happen with a series of containers running up and down. We don't have to wait for a VM to spin up (unlike Travis CI).
@@ -46,12 +47,24 @@ It allows us to select [bigger worker pools](https://cloud.google.com/build/docs
 The pricing model is pay-as-you-use instead of a fixed price.
 They are currently running a promotion with the first 120 builds-minutes per day being free.
 
-I've migrated a few repositories from Travis CI to Cloud Build as proof of concept.
-For the repositories that don't require any other depencencies (such as DB to run the integration tests), I've seen the build times goes down from ~4min on Travis CI to ~2min on Cloud Build!
-Additionally, we are also able to run more than 5 builds at a time without having to wait.
+Having laid out the good points, I've migrated a few repositories from Travis CI to Cloud Build as proof of concept.
+
+
+#### Show me the ~~money~~ numbers!
+
+
+| Repo | Previous (Travis CI) (average) |  Now (Cloud Build) (average) |
+|----------|---------------|-------|
+| Python app without any DB integrations |  ~4 min| ~2 min |
+| Python app with some DB integrations      |    ~6 min |   ~4 min |
+| Nginx app |  ~3 min |    ~40 sec |
+
+
+We are now enjoying being able to run more than 5 builds at a time without having to wait.
 The ability to choose bigger machines enabled us to speed up some repo build time by a lot as well.
 
-Some of the gains are not just due to the build environment. Depends on the applications, I used a few tricks such as caching, parallizing the tests and the build steps, etc.
+Please note that some of the gains are not just due to the build environment.
+Depends on the applications, I used a few tricks such as caching, parallizing the tests and the build steps, etc.
 I will write more about these in the future.
 
 ### The not-so-good parts
@@ -61,7 +74,7 @@ Now, let's talk about the other side...
 - The [build notification system](https://cloud.google.com/build/docs/configuring-notifications/notifiers) is cranky, compared to [Travis-CI](https://docs.travis-ci.com/user/notifications/).
 
 All I wanted was to see the build status posted on Slack but I had to set up Pub/Sub, Cloud Run, Secret Manager and Cloud Storage. This, to me, is unnecessarily complicated.
-I mean, look at this image!
+I mean, look at this!
 
 ![Clould Build Notifiers](/cloud_build_notifiers.png)
 

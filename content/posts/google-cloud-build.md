@@ -65,6 +65,8 @@ I mean, look at this image!
 
 ![Clould Build Notifiers](/cloud_build_notifiers.png)
 
+From https://cloud.google.com/build/images/cloud-build-notifiers.svg
+
 - Running integration tests
 
 In the Travis CI, it was quite straightforward because everything in a VM.

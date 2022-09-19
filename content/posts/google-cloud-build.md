@@ -63,7 +63,7 @@ Now, let's talk about the other side...
 All I wanted was to see the build status posted on Slack but I had to set up Pub/Sub, Cloud Run, Secret Manager and Cloud Storage. This, to me, is unnecessarily complicated.
 I mean, look at this image!
 
-![Clould Build Notifiers](https://cloud.google.com/build/images/cloud-build-notifiers.svg)
+![Clould Build Notifiers](/cloud_build_notifiers.png)
 
 - Running integration tests
 

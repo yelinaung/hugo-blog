@@ -6,7 +6,7 @@ pygmentsCodeFences = true
 pygmentsStyle = "xcode"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-paginate = 10
+paginate = 5
 
 # Nav.
 [[menu.main]]

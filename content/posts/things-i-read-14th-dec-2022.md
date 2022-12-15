@@ -6,12 +6,17 @@ description: Finding out the CPU info with hwloc/lstopo
 tags:
 - linux
 - ubuntu
-- python
+- hardware
 ---
 
 ## lstopo
 
-I've found out [Portable Hardware Locality (hwloc)](https://www.open-mpi.org/projects/hwloc/) tool recently. What is `hwloc` ? According to the official site,
+There are many ways to find out what's the CPU you are using and more info about it.
+For Windows and Android, there is [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html).
+For Mac, there is System Report or command line `sysctl -a | grep machdep.cpu`.
+On Linux, there are plenty. You can check with `htop`, `sudo lshw -C cpu`, `lscpu` or the good old `less /proc/cpuinfo`.
+
+Today, I've found out [Portable Hardware Locality (hwloc)](https://www.open-mpi.org/projects/hwloc/) tool. What is `hwloc` ? According to the official site,
 
 > The Portable Hardware Locality (hwloc) software package provides a portable abstraction (across OS, versions, architectures, ...) of the hierarchical topology of modern architectures, including NUMA memory nodes, sockets, shared caches, cores and simultaneous multithreading.
 > It also gathers various system attributes such as cache and memory information as well as the locality of I/O devices such as network interfaces, InfiniBand HCAs or GPUs.v

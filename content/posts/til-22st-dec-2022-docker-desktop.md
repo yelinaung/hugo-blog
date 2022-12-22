@@ -11,19 +11,19 @@ tags:
 
 This is how I came about learning this.
 
-- On a rare sunny afternoon in forever-raining-everyday Singapore, I happen to read [OCaml 5.0 Multicore is out](https://news.ycombinator.com/item?id=34013767) on HN.
-- One of the comments mentioned that this [What is an Operating System?](https://signalsandthreads.com/what-is-an-operating-system/) podcast.
-- As an impulsive monkey that I am, I proceed to listen to that on a very long bus ride from one end of Singapore to another.
-    - I highly recommend to check it out! Although I barely understood most of stuff, it is great. You trust me on this one.
-- One of the projects mentioned in this podcast is called [MirageOS](https://mirage.io/).
-    -  A modular library OS written in OCaml.
-- From there, I learned that [MirageOS libraries empower Docker Desktop](https://mirage.io/blog/2022-04-06.vpnkit).
+On a rare sunny afternoon in forever-raining-everyday Singapore, I happen to read [OCaml 5.0 Multicore is out](https://news.ycombinator.com/item?id=34013767) on HN.
+Wait, OCaml is still alive and thriving ? Very nice!
+One of the comments mentioned this [What is an Operating System?](https://signalsandthreads.com/what-is-an-operating-system/) podcast from JaneStreet.
+As an impulsive monkey that I am, I proceed to listen to that on a very long bus ride from one end of Singapore to another. (I highly recommend to check it out! Although I barely understood most of stuff, it is great. You trust me on this one.)
 
-Super cool, isn't it?
+One of the projects mentioned in this podcast is called [MirageOS](https://mirage.io/).
+A modular library OS written in OCaml.
+From there, I learned that [MirageOS libraries empower Docker Desktop](https://mirage.io/blog/2022-04-06.vpnkit).
+Holy Cannoli! How is this not _very cool_ ??
 
-The TLDR is that
+Anyway, the TLDR is that
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) for Windows and Mac OSX uses a Linux VM underneath to manage the container.
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) for Windows and Mac OSX uses a Linux VM underneath to manage the containers that you run via the GUI.
 - Docker uses LinuxKit to build the VM.
 
 From [The Magic Behind the Scenes of Docker Desktop | Docker](https://www.docker.com/blog/the-magic-behind-the-scenes-of-docker-desktop/)
@@ -33,10 +33,10 @@ From [The Magic Behind the Scenes of Docker Desktop | Docker](https://www.docker
 It is a toolkit for building secure, portable and lean operating systems for containers.
 
 - [LinuxKit](https://github.com/linuxkit/linuxkit) Repo
-- Neat guide - [Build custom OS by LinuxKit](https://satishdotpatel.github.io/build-custom-os-by-linuxkit/)
 
 Basically, you can use it to build a custom kernel/OS yourself with minimum dependencies.
 Then you can boot it up on the cloud VMs or your local VMs.
+Very flexible and customizable.
 
 For example, this is how an OS with only Redis running inside, plus only the required permissions.
 ```yaml
@@ -71,9 +71,10 @@ services:
     net: host
 ```
 
-Source from [redis-os](https://github.com/linuxkit/linuxkit/blob/master/examples/redis-os.yml)
+Source from [redis-os](https://github.com/linuxkit/linuxkit/blob/master/examples/redis-os.yml).
+Download [linuxkit](https://github.com/linuxkit/linuxkit/releases/tag/v1.0.1). Save it to a file, run a few command and you can boot it up!
 
-Save it to a file, run a few command and you can boot it up!
+Found a neat guide at [Build custom OS by LinuxKit](https://satishdotpatel.github.io/build-custom-os-by-linuxkit/) as well.
 
 ### VPNKit
 

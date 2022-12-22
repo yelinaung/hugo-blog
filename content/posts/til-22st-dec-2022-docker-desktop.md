@@ -9,6 +9,8 @@ tags:
 - ocaml
 ---
 
+22-12-22 Special!
+
 This is how I came about learning this.
 
 On a rare sunny afternoon in forever-raining-everyday Singapore, I happen to read [OCaml 5.0 Multicore is out](https://news.ycombinator.com/item?id=34013767) on HN.

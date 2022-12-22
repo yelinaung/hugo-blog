@@ -12,7 +12,8 @@ tags:
 This is how I came about learning this.
 
 On a rare sunny afternoon in forever-raining-everyday Singapore, I happen to read [OCaml 5.0 Multicore is out](https://news.ycombinator.com/item?id=34013767) on HN.
-Wait, OCaml is still alive and thriving ? Very nice!
+Wait, [OCaml](https://ocaml.org/) is still alive and thriving ? Very nice!
+
 One of the comments mentioned this [What is an Operating System?](https://signalsandthreads.com/what-is-an-operating-system/) podcast from JaneStreet.
 As an impulsive monkey that I am, I proceed to listen to that on a very long bus ride from one end of Singapore to another. (I highly recommend to check it out! Although I barely understood most of stuff, it is great. You trust me on this one.)
 
@@ -90,3 +91,5 @@ A bigger/detail picture.
 ![VPN-Kit](/vpnkit.png)
 
 From [How Docker Desktop Networking Works Under the Hood](https://www.docker.com/blog/how-docker-desktop-networking-works-under-the-hood/). Also highly recommended to check it out.
+
+Now that I've learned a little bit about MirageOS/Docker, I will traverse upward and learn more about OCaml next time!

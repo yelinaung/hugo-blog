@@ -104,4 +104,4 @@ From [How Docker Desktop Networking Works Under the Hood](https://www.docker.com
 
 Now that I've learned a little bit about MirageOS/Docker, I will traverse upward and learn more about OCaml next time!
 
-Disclaimer: I received assistance from ChatGPT, an AI language model, to simplify and clarify some technical concepts discussed in this post.
+Disclaimer: I received assistance from ChatGPT, an AI language model, to simplify and clarify some technical concepts discussed in this post. :-)

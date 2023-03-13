@@ -94,11 +94,11 @@ VPNKit is a tool that creates a virtual network interface on the host machine an
 This enables communication between virtual machines and containers as if they were on the same physical network, even if they're running on different machines or locations.
 It's built using OCaml and the network protocol libraries of MirageOS.
 
-![VPN-Kit-2](/vpnkit-2.png)
+![VPN-Kit-2](/vpnkit2_white_bg.png)
 
 A bigger/detail picture.
 
-![VPN-Kit](/vpnkit.png)
+![VPN-Kit](/vpnkit_white_bg.png)
 
 From [How Docker Desktop Networking Works Under the Hood](https://www.docker.com/blog/how-docker-desktop-networking-works-under-the-hood/). Also highly recommended to check it out.
 

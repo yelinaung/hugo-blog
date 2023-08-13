@@ -1,6 +1,6 @@
 baseURL = "https://blog.yelinaung.com/"
 languageCode = "en-us"
-title = "Random stuff"
+title = "Ye Lin's Random stuff"
 theme = "hugo-ink"
 pygmentsCodeFences = true
 pygmentsStyle = "xcode"

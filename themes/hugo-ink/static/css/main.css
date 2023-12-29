@@ -386,14 +386,14 @@ ul {
 
 .footer {
     text-align: right;
-    font-size: 0.75em;
+    font-size: 0.95em;
     color: rgb(39, 39, 39);
     border-top: 1px solid #f4f4f4;
     margin-top: 40px;
     padding: 15px 0;
 }
     .footer a {
-        color: #666;
+        color: #3700ff;
     }
     .footer a:hover {
         color: #3700ff;

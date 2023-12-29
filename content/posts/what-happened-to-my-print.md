@@ -96,7 +96,8 @@ For that, I can to use a newline character (`\n`) to force the program flush to 
 
 int main(void)
 {
-        // This should prints "Hello!" and flushes to an output device (stdout) due to newline
+        // This should prints "Hello!" and
+        // flushes to an output device (stdout) due to newline
         printf("%s\n", "Hello!");
         int *p = NULL;
         *p = 5;

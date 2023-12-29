@@ -109,9 +109,32 @@ Segmentation fault (core dumped)
 ```
 The "Another Hello!" didn't make it but that's ok. The program crashed before it reaches to that line.
 
+Update : [fflush()](https://man7.org/linux/man-pages/man3/fflush.3.html)
+
+The `fflush` function also flushes the output buffer to the output device without the use of newline character (`\n`).
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+        printf("%s", "Hello!");
+        fflush(stdout);
+        int *p = NULL;
+        *p = 5;
+        printf("%s\n", "Another Hello!");
+}
+```
+will output
+```
+$ gcc -Wall -Wextra -o hello hello.c && ./hello
+Hello!Segmentation fault (core dumped)
+```
+
 Well, that's been my little TIL and hope you learn something as well!
 
 #### References
 
 - The NULL Pointer - [https://beej.us/guide/bgc/html/split/pointers.html#the-null-pointer](https://beej.us/guide/bgc/html/split/pointers.html#the-null-pointer)
 - Buffering Concepts - [https://www.gnu.org/software/libc/manual/html_node/Buffering-Concepts.html](https://www.gnu.org/software/libc/manual/html_node/Buffering-Concepts.html)
+- fflush - [https://man7.org/linux/man-pages/man3/fflush.3.html](https://man7.org/linux/man-pages/man3/fflush.3.html)

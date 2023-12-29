@@ -33,6 +33,7 @@ weight = 4
 subtitle = "My random notes"
 featherIconsCDN = true
 mode = "auto" # "dark" or "auto"
+description = "A place where I write down stuff - what I've learned recently, my learning progress, interesting topics, books, wins/losses"
 
 [[params.social]]
 name = "Github"

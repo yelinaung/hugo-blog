@@ -2,6 +2,11 @@
 title: "Why My Print Didn't Output Before a Segmentation Fault"
 date: 2023-12-29T15:51:12+08:00
 draft: false
+tags:
+- "linux"
+- "til"
+- "c"
+description: "Why printf statements may not output as expected due to stdout being line buffered, and a segmentation fault crash"
 ---
 
 So, as I was learning some [C](https://beej.us/guide/bgc/), at the pointers/segfault, I was trying this code myself.

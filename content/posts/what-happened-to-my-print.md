@@ -83,6 +83,9 @@ Hello!AnotherHello!ubuntu@playground:~$
 ```
 Now, all goes well, `main()` returns successfully and everything is flushed out to the output device. I see my prints!
 
+
+#### Newline (`\n`)
+
 But..how about I want to keep things the same way and have my prints. I wanna have the cake and eat it too.
 
 In one of the conditions above, the buffer should be flushed to the output device `When a newline is written, if the stream is line buffered.`
@@ -109,7 +112,7 @@ Segmentation fault (core dumped)
 ```
 The "Another Hello!" didn't make it but that's ok. The program crashed before it reaches to that line.
 
-Update : [fflush()](https://man7.org/linux/man-pages/man3/fflush.3.html)
+#### [fflush()](https://man7.org/linux/man-pages/man3/fflush.3.html)
 
 The `fflush` function also flushes the output buffer to the output device without the use of newline character (`\n`).
 

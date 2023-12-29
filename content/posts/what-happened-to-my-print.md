@@ -110,3 +110,8 @@ Segmentation fault (core dumped)
 The "Another Hello!" didn't make it but that's ok. The program crashed before it reaches to that line.
 
 Well, that's been my little TIL and hope you learn something as well!
+
+#### References
+
+- The NULL Pointer - [https://beej.us/guide/bgc/html/split/pointers.html#the-null-pointer](https://beej.us/guide/bgc/html/split/pointers.html#the-null-pointer)
+- Buffering Concepts - [https://www.gnu.org/software/libc/manual/html_node/Buffering-Concepts.html](https://www.gnu.org/software/libc/manual/html_node/Buffering-Concepts.html)

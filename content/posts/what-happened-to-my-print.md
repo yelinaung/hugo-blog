@@ -40,7 +40,7 @@ int *p = NULL;
 ```
 The first line declares a pointer `p` that should hold an integer type and we are setting it to `NULL` (nowhere/no actual thing).
 
-In the second line, we tries to writes "5" to the memory location pointed to by `p`. But `p` doesn't exist.
+In the second line tries to writes "5" to the memory location pointed to by `p`. But `p` doesn't exist.
 It's invalid memory access and causes a crash which is [segfault](https://en.wikipedia.org/wiki/Segmentation_fault)!
 
 Wait, how does this crash prevent the program to print out "Hello!" in terminal? It seems like nothing to do with our `printf` since it comes before the crash happens.
@@ -88,9 +88,11 @@ Now, all goes well, `main()` returns successfully and everything is flushed out 
 
 But..how about I want to keep things the same way and have my prints. I wanna have the cake and eat it too.
 
-In one of the conditions above, the buffer should be flushed to the output device `When a newline is written, if the stream is line buffered.`
+Rememer, in one of the conditions above, it says that "When a newline is written, if the stream is line buffered".
 
-For that, I can to use a newline character (`\n`) to force the program flush to the buffer. We can keep the rest in the same way.
+For that, I can use a newline character (`\n`) to force the program flush to the buffer. We can keep the rest in the same way.
+Let's see if that works.
+
 ```c
 #include <stdio.h>
 
@@ -105,7 +107,7 @@ int main(void)
 }
 ```
 
-I see my "Hello!" here!
+Yes! I see my "Hello!" here.
 ```
 $ gcc -Wall -Wextra -o hello hello.c && ./hello
 Hello!

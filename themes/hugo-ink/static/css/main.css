@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
     color: #333;
     line-height: 1.8em;
-    font-size: 17px;
+    font-size: 20px;
     font-display: swap;
 }
 
@@ -103,7 +103,7 @@ textarea {
 blockquote {
     margin-left: 1rem;
     font-style: italic;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: Georgia,bitstream charter,serif;
     font-display: swap;
     border-left: 3px solid;
@@ -141,7 +141,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 h5 {
@@ -222,7 +222,7 @@ ul {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 850px;
     margin-top: 50px;
 }
 

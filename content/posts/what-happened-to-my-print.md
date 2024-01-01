@@ -52,7 +52,8 @@ The condidtions, according to the [GNU C guidelines](https://www.gnu.org/softwar
 
 ---
 (Copied straight from the guide)
-##### Flushing output on a buffered stream means transmitting all accumulated characters to the file. There are many circumstances when buffered output on a stream is flushed automatically:
+
+Flushing output on a buffered stream means transmitting all accumulated characters to the file. There are many circumstances when buffered output on a stream is flushed automatically:
 - When you try to do output and the output buffer is full.
 - When the stream is closed. See Closing Streams.
 - When the program terminates by calling exit. See Normal Termination.
@@ -83,8 +84,7 @@ Hello!AnotherHello!ubuntu@playground:~$
 ```
 Now, all goes well, `main()` returns successfully and everything is flushed out to the output device. I see my prints!
 
-
-#### Newline (`\n`)
+### Newline (`\n`)
 
 But..how about I want to keep things the same way and have my prints. I wanna have the cake and eat it too.
 
@@ -122,7 +122,7 @@ $ echo $?
 139
 ```
 
-#### [fflush()](https://man7.org/linux/man-pages/man3/fflush.3.html)
+### [fflush()](https://man7.org/linux/man-pages/man3/fflush.3.html)
 
 The `fflush` function also flushes the output buffer to the output device without the use of newline character (`\n`).
 
@@ -144,7 +144,7 @@ $ gcc -Wall -Wextra -o hello hello.c && ./hello
 Hello!Segmentation fault (core dumped)
 ```
 
-#### stderror is always unbuffered
+### stderror is always unbuffered
 
 Someone on HN [said](https://news.ycombinator.com/reply?id=38830109&goto=item%3Fid%3D38803367%2338830109)
 
@@ -175,8 +175,9 @@ $ echo $?
 
 Well, that's been my little TIL and hope you learn something as well!
 
-#### References
+### References
 
 - The NULL Pointer - [https://beej.us/guide/bgc/html/split/pointers.html#the-null-pointer](https://beej.us/guide/bgc/html/split/pointers.html#the-null-pointer)
 - Buffering Concepts - [https://www.gnu.org/software/libc/manual/html_node/Buffering-Concepts.html](https://www.gnu.org/software/libc/manual/html_node/Buffering-Concepts.html)
 - fflush - [https://man7.org/linux/man-pages/man3/fflush.3.html](https://man7.org/linux/man-pages/man3/fflush.3.html)
+- [Hacker News comments](https://news.ycombinator.com/item?id=38803367)

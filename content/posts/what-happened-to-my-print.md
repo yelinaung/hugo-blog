@@ -113,6 +113,15 @@ Segmentation fault (core dumped)
 ```
 The "Another Hello!" didn't make it but that's ok. The program crashed before it reaches to that line.
 
+Checking the exit code of the program:
+```
+$ ./hello
+Hello!
+Segmentation fault (core dumped)
+$ echo $?
+139
+```
+
 #### [fflush()](https://man7.org/linux/man-pages/man3/fflush.3.html)
 
 The `fflush` function also flushes the output buffer to the output device without the use of newline character (`\n`).
@@ -133,6 +142,35 @@ will output
 ```
 $ gcc -Wall -Wextra -o hello hello.c && ./hello
 Hello!Segmentation fault (core dumped)
+```
+
+#### stderror is always unbuffered
+
+Someone on HN [said](https://news.ycombinator.com/reply?id=38830109&goto=item%3Fid%3D38803367%2338830109)
+
+> If you use stderr, you get this for free: stderr is always unbuffered (see https://linux.die.net/man/3/stderr).
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+        fprintf(stderr, "%s", "Hello!");
+        int *p = NULL;
+        *p = 5;
+        printf("%s\n", "Another Hello!");
+}
+```
+works the same
+```
+$ gcc -Wall -Wextra -o hello_stderr hello_stderr.c && ./hello_stderr
+Hello!Segmentation fault (core dumped)
+```
+
+Same exit code as the previous example as well.
+```bash
+$ echo $?
+139
 ```
 
 Well, that's been my little TIL and hope you learn something as well!

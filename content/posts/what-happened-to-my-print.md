@@ -150,7 +150,7 @@ Hello!Segmentation fault (core dumped)
 
 Someone on HN [said](https://news.ycombinator.com/reply?id=38830109&goto=item%3Fid%3D38803367%2338830109)
 
-> If you use stderr, you get this for free: stderr is always unbuffered (see https://linux.die.net/man/3/stderr).
+> If you use stderr, you get this for free: stderr is always unbuffered (see [here](https://linux.die.net/man/3/stderr)).
 
 ```c
 #include <stdio.h>

@@ -6,7 +6,7 @@ pygmentsCodeFences = true
 pygmentsStyle = "solarized-light"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-paginate = 5
+pagination.pagerSize = 10
 enableRobotsTXT = true
 
 # Nav.

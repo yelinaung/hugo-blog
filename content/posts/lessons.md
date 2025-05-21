@@ -9,7 +9,7 @@ I have given this talk to a group of students back in Myanmar, as part of a free
 The students are young, smart and enthusiastic. Unfortunately, they had to stop their education due to the covid and the tough political situation back home.
 As requested by the organizer of the bootcamp, I thought about what I can share and this is the result of it.
 
-I also thought I would also post it here for anyone. 
+I also thought I would also post it here for anyone.
 
 Disclaimer : This is just my thoughts and do not represent the views of my employer. :-)
 

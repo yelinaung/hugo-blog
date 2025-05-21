@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
 body {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     color: #333;
     line-height: 1.8em;
-    font-size: 20px;
-    font-display: swap;
+    font-size: 17px;
 }
 
 a {
@@ -14,6 +13,9 @@ a {
     text-decoration: none;
     word-break: break-word;
 }
+    a:hover {
+        border-bottom: 2px solid #3700ff;
+    }
 
 html,button,input,select,textarea {
     color: #333;
@@ -103,9 +105,8 @@ textarea {
 blockquote {
     margin-left: 1rem;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-family: Georgia,bitstream charter,serif;
-    font-display: swap;
     border-left: 3px solid;
     border-color: #3700ff;
     padding-left: 20px;
@@ -141,7 +142,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 h5 {
@@ -176,7 +177,7 @@ ul.flat {
 ul.flat li {
     display: block;
     list-style: none;
-    margin-left: 10px;
+    margin-left: 0;
 }
 
 .prevent-collapse {
@@ -191,13 +192,8 @@ ul {
     list-style: disc inside;
 }
 
-.post ul {
-    list-style-type: circle;
-}
-
 .post ul li {
     margin-bottom: 10px;
-    padding: 3px 0 2px 25px;
 }
 
 .post ul li p {
@@ -222,8 +218,8 @@ ul {
 }
 
 .container {
-    max-width: 850px;
-    margin-top: 50px;
+    max-width: 800px;
+    margin-top: 30px;
 }
 
 .header {
@@ -233,7 +229,7 @@ ul {
 
 .header .avatar {
     float: left;
-    margin: -25px 20px 0 0;
+    margin: 0 20px 0 0;
 }
 .header .avatar img {
     width: 64px;
@@ -242,8 +238,7 @@ ul {
     border-radius: 100%;
 }
 .header .site-title {
-    margin: 0 0 10px 0;
-    line-height: 0.2em;
+    margin: 0;
 }
     .site-title a {
         color: #333;
@@ -257,6 +252,9 @@ ul {
     display: flex;
     justify-content: space-between;
 }
+    .header .site-description p {
+        margin: 0 0 10px 0;
+    }
 
 .header nav {
     border-top: 1px solid #eee;
@@ -337,7 +335,6 @@ ul {
     font-weight: 700;
     line-height: 0.45em;
     font-size: 3em;
-    font-display: swap;
     display: block;
     margin-bottom: 20px;
 }
@@ -351,8 +348,6 @@ ul {
 
 .post .title.small {
     margin: 0 0 10px 0;
-    font-size: 1.5em;
-    font-weight: 500;
 }
 .post .post-header {
     margin-bottom: 30px;
@@ -386,14 +381,14 @@ ul {
 
 .footer {
     text-align: right;
-    font-size: 0.95em;
-    color: rgb(39, 39, 39);
+    font-size: 0.75em;
+    color: #999;
     border-top: 1px solid #f4f4f4;
     margin-top: 40px;
     padding: 15px 0;
 }
     .footer a {
-        color: #3700ff;
+        color: #666;
     }
     .footer a:hover {
         color: #3700ff;
@@ -465,7 +460,7 @@ ul {
     }
     .header .nav li {
         margin: 0 10px 0 0;
-        font-size: 14px;
+        font-size: 0.875em;
     }
 
     table {
@@ -474,5 +469,18 @@ ul {
       display: block;
       overflow-x: auto;
       width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .header .nav.social {
+        min-width: auto;
+        margin: 0;
+    }
+    .header .site-description {
+        font-size: 1em;
+        margin-top: 10px;
+        font-size: 0.875em;
+        line-height: 1.4em;
     }
 }

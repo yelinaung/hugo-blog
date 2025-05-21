@@ -17,7 +17,7 @@
 					<li><a href="{{ $key.url }}" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a></li>
 				{{- end -}}
 		    {{- if or (eq .Site.Params.mode "auto") (eq .Site.Params.mode "dark") -}}
-		    	<li><a href="#" aria-label="Toggle between light and dark theme" class="scheme-toggle" id="scheme-toggle"></a></li>
+		    	<li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li>
 		    {{- end -}}
 			</ul>
 		</nav>

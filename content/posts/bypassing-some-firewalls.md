@@ -2,7 +2,6 @@
 title = "Bypassing Some Firewalls"
 date = "2022-09-21T10:44:41+08:00"
 author = ""
-authorTwitter = "" #do not include @
 cover = ""
 tags = ["bypassing", "scraping"]
 keywords = ["", ""]

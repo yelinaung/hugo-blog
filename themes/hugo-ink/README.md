@@ -2,7 +2,7 @@
 Crisp, minimal personal website and blog theme Hugo. Forked from [Ezhil](https://github.com/vividvilla/ezhil).
 
 ## Demo
-[View demo](https://hugo-ink.netlify.com)
+[View demo](https://hugo-ink.netlify.app)
 ![Screenshot](https://user-images.githubusercontent.com/547147/69119000-3ace9280-0abb-11ea-81bc-5af68433e845.png "Ink light theme")
 
 ## Features
@@ -44,7 +44,7 @@ This is some static page where you can write about yourself.
 
 Due to the currently unavailable feature for multilingual dates in ``.Date`` from
 Go. It is possible to create a ``month.yaml`` in the data folder of your
-Hugo site root directoy. There is also an example file in
+Hugo site root directory. There is also an example file in
 ``exampleSite/data/``.
 
 ```sh

@@ -41,12 +41,12 @@ spec:
 `kubelet` will periodically check the folder and create the Pod.
 We should be seeing the `nginx` Pod up and running shortly.
 We can customize the folder path with `--pod-manifest-path` when we run `kubelet` process.
-The Control plane from the Master Node is not involved in creating a static Pod. 
+The Control plane from the Master Node is not involved in creating a static Pod.
 Yet, once the `api-server` is reachable, kubelet will notify a record on the `api-server` as a mirror Pod record. So that we can see the pods when we do `kubectl` get pods.
 
 ##### When is this actually useful?
 Most of the time, we won't have to create one like this.
-Static pods are usually used by software bootstrapping Kubernetes itself. 
+Static pods are usually used by software bootstrapping Kubernetes itself.
 One use is [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm/). During the setup, kubeadm uses static pods to bring up Kubernetes control plane components like api-server, controller-manager.
 
 This only works for the Pods and not for `ReplicaSet` or `Deployment`.

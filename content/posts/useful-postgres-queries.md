@@ -2,7 +2,6 @@
 title = "Useful Postgres Queries"
 date = "2022-11-09T11:44:41+08:00"
 author = "Ye Lin Aung"
-authorTwitter = "" #do not include @
 cover = ""
 tags = ["postgres", "til"]
 keywords = ["postgres", "postgresql", "tils"]

@@ -2,7 +2,6 @@
 title = "Travis CI to Google Cloud Build"
 date = "2022-09-18T10:04:17+08:00"
 author = ""
-authorTwitter = "ylameow" #do not include @
 cover = ""
 tags = ["gcp", "build", "travis-ci", "devops", "infrastructure"]
 keywords = ["", ""]

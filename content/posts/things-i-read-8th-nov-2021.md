@@ -24,13 +24,13 @@ I also tried running the Python examples on my laptop. See the [github repo](htt
 ```bash
 ➜  str_bench git:(master) python --version
 Python 3.9.6
-➜  str_bench git:(master) time python str00.py 
+➜  str_bench git:(master) time python str00.py
 python str00.py  5.17s user 0.02s system 99% cpu 5.185 total
 ➜  str_bench git:(master) time python str01.py
 python str01.py  4.50s user 0.03s system 99% cpu 4.526 total
 ➜  str_bench git:(master) time python str02.py
 python str02.py  4.74s user 0.41s system 99% cpu 5.155 total
-➜  str_bench git:(master) time python str03.py 
+➜  str_bench git:(master) time python str03.py
 python str03.py  4.90s user 0.47s system 99% cpu 5.380 total
 ➜  str_bench git:(master) time python str04.py
 python str04.py  4.43s user 0.47s system 99% cpu 4.907 total
@@ -78,9 +78,9 @@ for j in range(20):
 ```bash
 ➜  ~ python -m timeit "str(1)"
 1000000 loops, best of 5: 210 nsec per loop
-➜  ~ python -m timeit "f'{1}'"          
+➜  ~ python -m timeit "f'{1}'"
 5000000 loops, best of 5: 91.7 nsec per loop
 ```
-Need to find out more why f-strings are faster with `dis` module. # TODO 
+Need to find out more why f-strings are faster with `dis` module. # TODO
 
 5. PyPy might be pretty fast as well. I gotta try it sometime. # TODO

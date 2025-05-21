@@ -1,16 +1,10 @@
 <div class="footer wrapper">
 	<nav class="nav">
-        <a rel="me" title="Link to Mastodon" href="https://hachyderm.io/@yelinaung">Find me on Mastodon</a>
-	        <div>{{ .Date.Year}} {{ with .Site.Copyright }} {{ . | safeHTML }} | {{ end }} <a title="Hugo Theme Link" href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a title="Hugo site" href="https://gohugo.io">Hugo</a></div>
+		<div>{{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . | safeHTML }} | {{ end }} <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
 	</nav>
 </div>
 
-{{ template "_internal/google_analytics_async.html" . }}
+{{ template "_internal/google_analytics.html" . }}
 {{- with .Site.Params.Social -}}
+<script>feather.replace()</script>
 {{- end -}}
-<script async defer
-        data-website-id="bbf98e47-b734-424e-a492-7a54c6b4abd3"
-        src="https://umami.yelinaung.com/script.js"
-        data-domains="yelinaung.com,blog.yelinaung.com"
-        >
-</script>

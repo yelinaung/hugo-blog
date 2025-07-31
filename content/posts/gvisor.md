@@ -17,8 +17,8 @@ But, if these containers are all sharing the same operating system kernel, is th
 
 Let's briefly revisit how standard Docker containers operate and interact with the host system.
 
-![Docker Achitecture](/docker_architecture.png)
-(Image from [Understanding Docker Architecutre](https://subscription.packtpub.com/book/cloud-and-networking/9781787120532/10/ch10lvl1sec57/understanding-docker-s-architecture))
+![Docker Architecture](/docker_architecture.png)
+(Image from [Understanding Docker Architecture](https://subscription.packtpub.com/book/cloud-and-networking/9781787120532/10/ch10lvl1sec57/understanding-docker-s-architecture))
 
 When you run a container (let's say `ubuntu`) without any modifications or changes on a Linux host, it shares the same Kernel as the host OS.
 
@@ -70,7 +70,7 @@ It is safer because of a few reasons
 * Offers a smaller, more auditable attack surface: The Sentry implements many Linux system calls, but not all of them ([there are a lot!](https://man7.org/linux/man-pages/man2/syscalls.2.html)), focusing on what typical containerized applications need. Because it's written in Go (a memory-safe language), it helps avoid many common security pitfalls found in C-based kernels (like buffer overflows, use-after-free, etc.).
 * Enforces strong isolation: Even if an attacker breaks out of the application running inside gVisor, they then land in the Sentry. Breaking out of the Sentry to the host system is another, much harder step.
 
-As always, there are trade-offs. The main obvious one is performance overhead. Beacuse it's intercepting system calls and doing some operations in the userspace, there's more overhead compared to a direct native system call. e.g apps that do very frequently I/O operations like reading/writing many files will be impacted by this. Other downsides might be debugging. We now have an additional component that I have to check/audit whenever there's an issue.
+As always, there are trade-offs. The main obvious one is performance overhead. Because it's intercepting system calls and doing some operations in the userspace, there's more overhead compared to a direct native system call. e.g apps that do very frequently I/O operations like reading/writing many files will be impacted by this. Other downsides might be debugging. We now have an additional component that I have to check/audit whenever there's an issue.
 
 Now, let me demonstrate. I have [installed gVisor](https://gvisor.dev/docs/user_guide/install/) (and its components) on my Linux system. I followed the [Docker quick start](https://gvisor.dev/docs/user_guide/quick_start/docker/) guide.
 
@@ -112,11 +112,11 @@ I hope you get the idea here of what gVisor does and how it _roughy_ works.
 
 How are people using it ?
 - List of [usecase/users](https://gvisor.dev/users/) from the official site
-- The first generation of GCP CloudRun used `gVisor` as noted [here](https://cloud.google.com/run/docs/container-contract#sandbox) but I read that they have moved back to hypervisors/plain Linux Kenel for being more performant for more common workloads.
+- The first generation of GCP CloudRun used `gVisor` as noted [here](https://cloud.google.com/run/docs/container-contract#sandbox) but I read that they have moved back to hypervisors/plain Linux Kernel for being more performant for more common workloads.
 - GKE supports [Sandbox](https://cloud.google.com/kubernetes-engine/docs/concepts/sandbox-pods), which uses gVisor.
-- [Fly.io](https://fly.io/blog/sandboxing-and-workload-isolation/) _considered_ using gVisor but opted to go with Firecraker MicroVM instead. Nonetheless, they still have good things to say about it.
+- [Fly.io](https://fly.io/blog/sandboxing-and-workload-isolation/) _considered_ using gVisor but opted to go with Firecracker MicroVM instead. Nonetheless, they still have good things to say about it.
 
-So, to receap,
+So, to recap,
 
 - If you are running a multi-tenant system with containers, especially that allows people to do whatever they want or having something as defense-in-depth, you may wanna consider having gVisor as a layer.
 - Always remember the inherent trade-off: balancing the enhanced security gVisor provides against potential performance overhead
